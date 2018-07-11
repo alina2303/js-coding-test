@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.process {
+  list-style: none;
+  padding: 0;
+}
+
+.activity {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: lightgray;
+  margin-bottom: 1rem;
+}
+
+.label {
+  color: white;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/*##### ONLY CHANGE CODE BELOW THIS POINT #####*/
+
+.label {
+  padding-top: 18px;
+}
+
+.activity {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+.activity:after {
+  content: "→";
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  transform: rotate(90deg) translate(50%);
+  left: 50%;
+  
+}
+
+.activity:last-child:after {
+  display: none;
+}
+
+
